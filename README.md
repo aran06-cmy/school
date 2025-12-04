@@ -50,6 +50,45 @@ npm run build
 npm start
 ```
 
+## 🌐 배포하기 (Vercel 추천)
+
+### Vercel로 배포 (가장 쉬운 방법!)
+
+**1단계: Vercel 회원가입**
+1. [Vercel 웹사이트](https://vercel.com) 접속
+2. "Sign Up" 클릭
+3. "Continue with GitHub" 선택
+4. GitHub 계정으로 로그인
+5. Vercel이 GitHub 접근 권한 요청하면 "Authorize Vercel" 클릭
+
+**2단계: 프로젝트 Import**
+1. Vercel 대시보드에서 "Add New..." 버튼 클릭
+2. "Project" 선택
+3. GitHub 저장소 목록에서 "school" 찾기
+4. "Import" 버튼 클릭
+
+**3단계: 배포 설정**
+- Framework Preset: **Next.js** (자동 감지됨)
+- Root Directory: `./` (기본값)
+- Build Command: `npm run build` (자동 설정됨)
+- Output Directory: `.next` (자동 설정됨)
+- 설정 그대로 두고 **"Deploy"** 클릭!
+
+**4단계: 배포 완료! 🎉**
+- 2-3분 후 배포 완료
+- `https://school-xxxx.vercel.app` 같은 주소 생성
+- 이 주소를 누구에게나 공유 가능!
+
+**자동 재배포:**
+- GitHub에 코드를 푸시하면 자동으로 재배포됩니다
+- `git push` → Vercel이 자동으로 새 버전 배포
+
+### 배포 후 확인사항
+- ✅ 검색 기능 작동 확인
+- ✅ 카테고리 필터 작동 확인
+- ✅ 즐겨찾기 기능 확인 (LocalStorage)
+- ✅ 모바일에서 전화 걸기 기능 확인
+
 ## 📁 프로젝트 구조
 
 ```
